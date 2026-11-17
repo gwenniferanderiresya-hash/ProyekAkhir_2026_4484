@@ -14,52 +14,111 @@
 /* TODO CSS-01: Atur jenis font, warna teks, warna latar belakang,
    margin, dan padding dasar halaman. */
 body {
+  background-color: #FFF0F5;
+  font-family: sans-serif;
+  color: black;
+  margin: 0;
+  padding: 0;
 }
 
 /* TODO CSS-02: Atur lebar konten, posisi, padding, margin,
    border dan border-radius seperlunya. */
 .container {
+  margin: 0 auto;
+  max-width: 900px;
+  padding: 20px;
 }
 
 .kepala-halaman {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
 }
 
 .panel {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border: 1px solid #F5C6D6;
+  border-radius: 12px;
 }
 
 /* TODO CSS-03: Atur ukuran input, padding, jarak antar elemen,
    warna tombol, dan tampilan yang konsisten. */
 .form-baris {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .form-baris label {
+  font-weight: bold;
+  color: #9D426B;
 }
 
 .form-baris input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #E8AFC4;
+  border-radius: 8px;
+  font-size: 14px;
 }
 
 .aksi {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .aksi button {
+  padding: 10px 18px;
+  background-color: #E8AFC4;
+  color: #5C2940;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
 }
 
 /* TODO CSS-04: Rapikan daftar kegiatan, jumlah kegiatan, dan pesan
    status. Bedakan tampilan status berhasil dan gagal. */
 #daftarKegiatan {
+  padding-left: 25px;
+  margin-top: 15px;
 }
 
 #daftarKegiatan li {
+  padding: 12px;
+  margin-bottom: 8px;
+  background-color: #FFF0F5;
+  border: 1px solid #F5C6D6;
+  border-radius: 8px;
 }
 
 .ringkasan {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #FFF0F5;
+  border-radius: 8px;
+  color: #9D426B;
+  font-weight: bold;
 }
 
 #pesanStatus {
+  padding: 12px;
+  margin-top: 15px;
+  border-radius: 8px;
+  background-color: #F8F8F8;
+  color: #555555;
 }
 
 #pesanStatus.berhasil {
+  background-color: #E5F5E9;
+  color: #26733B;
 }
 
 #pesanStatus.gagal {
+  background-color: #FCE4E4;
+  color: #A52A2A;
 }
